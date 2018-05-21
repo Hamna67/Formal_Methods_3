@@ -1,24 +1,9 @@
 //This file was generated from (Commercial) UPPAAL 4.0.14 (rev. 5615), May 2014
 
 /*
-Nust Signal becomes Green
+Every signal becomes green with in its specified clock time
 */
-E<> SignalNust.Green
-
-/*
-1st  Signal on kashmir highway becomes Green
-*/
-E<> SignalK1.Green
-
-/*
-2nd  Signal on kashmir highway becomes Green
-*/
-E<> SignalK2.Green
-
-/*
-G11 Signal becomes Green
-*/
-E<> SignalG11.Green
+A[] (SignalK2.Green imply SignalK2.z <= 34) and (SignalK1.Green imply SignalK1.w <= 34) and (SignalNust.Green imply SignalNust.y <= 6) and (SignalG11.Green imply SignalG11.x <= 6)
 
 /*
 If second signal on Kashmir Highway is green then all other are not green
